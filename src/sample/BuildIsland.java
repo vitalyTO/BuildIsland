@@ -14,8 +14,8 @@ public class BuildIsland {
 
     private static Random r = new Random();
     private static DecimalFormat df = new DecimalFormat("#.#");
-    public static final int N = 15;
-    public static final int Width = 800;
+    private static final int N = Main.N;
+    private static final int Width = Main.sWidth;
     private static final Point finalPoint = new Point(rand(Width),0);
 
     private static double giveNormalNum(double n){

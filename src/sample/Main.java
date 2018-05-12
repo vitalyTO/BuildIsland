@@ -21,12 +21,15 @@ import java.awt.*;
 
 public class Main extends Application {
 
+    protected static int N = 15;
+
+
     public static void main(String[] args) {
         launch(args);
     }
 
-    private static final int sWidth = BuildIsland.Width;
-    private static final int sHeight = 800;
+    protected static final int sWidth = 800;
+    private static final int sHeight = sWidth;
 
     Button b = new Button("New Graph");
 
@@ -38,7 +41,6 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         try{
-
             primaryStage.setTitle("Island Problem");
             root.getChildren().add(canvas);
             Scene scene = new Scene(root, sWidth,sHeight);

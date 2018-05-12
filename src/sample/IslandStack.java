@@ -41,7 +41,7 @@ public class IslandStack<T> implements MoveStackInterface<T> {
         return topOfStack;
     }
 
-    public T extract(int index) { //returns elem from the top
+    public T extract(int index) {
         T el = null;
         try {el = moveStack[index];}
         catch (Exception e){e.printStackTrace();}
