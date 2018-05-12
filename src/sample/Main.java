@@ -21,15 +21,12 @@ import java.awt.*;
 
 public class Main extends Application {
 
-    protected static int N = 15;
-
-
+    protected static int N = 20; //Number of vertices
+    protected static final int sWidth = 850;
+    private static final int sHeight = sWidth;
     public static void main(String[] args) {
         launch(args);
     }
-
-    protected static final int sWidth = 800;
-    private static final int sHeight = sWidth;
 
     Button b = new Button("New Graph");
 
